@@ -54,8 +54,8 @@
     <application context-root="daytrader" id="daytrader" location="daytrader3.0.9-ee6-src.ear" name="daytrader">
 	<classloader commonLibraryRef="apache-commons-lib"/>
     </application>
-    <variable name="DB2_JCC_DRIVER_PATH" value="${server.config.dir}/resources/db2"/>
+    <variable name="DB2_JCC_DRIVER_PATH" value="${server.config.dir}/lib/db2"/>
     <library id="apache-commons-lib">
-  	<fileset dir="${server.config.dir}/resources/commons" includes="*.jar"/>
+  	<fileset dir="${server.config.dir}/lib/commons" includes="*.jar"/>
     </library>
 </server>
