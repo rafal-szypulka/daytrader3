@@ -9,7 +9,7 @@ FROM websphere-liberty:webProfile7
 COPY ./server.xml /config
 COPY ./binary/application/* /config/apps/
 RUN mkdir /config/lib
-COPY ./lib/* /config/lib/
+COPY ./binary/lib/* /config/lib/
 
 #FEATURES: Install any features that are required
 USER root
@@ -21,13 +21,14 @@ RUN /opt/ibm/wlp/bin/installUtility install  --acceptLicense \
 	servlet-3.1 \
 	jsf-2.2 \
 	jndi-1.0 \
-	jdbc-4.2 \
+	jdbc-4.1 \
 	jms-2.0 \
 	wasJmsServer-1.0 \
 	jaxb-2.2 \
 	mdb-3.2 \
 	webCache-1.0 \
-	jpa-2.1 \
+	jpa-2.0 \
+	distributedMap-1.0 \
 	wasJmsClient-2.0; exit 0
 
 
