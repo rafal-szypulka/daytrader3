@@ -7,9 +7,9 @@ FROM websphere-liberty:webProfile7
 
 #BINARIES: Add in all necessary application binaries
 COPY ./server.xml /config
-COPY ./binary/application/* /config/dropins/
+COPY ./binary/application/* /config/apps/
 RUN mkdir /config/lib
-COPY ./binary/lib/* /config/lib/
+COPY ./lib/* /config/lib/
 
 #FEATURES: Install any features that are required
 USER root
