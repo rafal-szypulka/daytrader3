@@ -56,6 +56,6 @@
     </application>
     <variable name="DB2_JCC_DRIVER_PATH" value="${server.config.dir}/lib/db2"/>
     <library id="apache-commons-lib">
-  	<fileset dir="${server.config.dir}/lib/commons" includes="*.jar"/>
+  	   <fileset dir="${server.config.dir}/lib/commons" includes="*.jar"/>
     </library>
 </server>
